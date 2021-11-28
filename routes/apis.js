@@ -1,7 +1,7 @@
 const express = require("express");
 
 const productController = require("../controllers/productController");
-const clientController = require("../controllers/clientController");
+//const clientController = require("../controllers/clientController");
 
 //define a router and create routes
 const router = express.Router();
@@ -14,8 +14,8 @@ router.get("/api/article/:id", productController.getProductByID);
 //routes for dynamic processing of clients
 //-----------------------------------------------
 //route for registration
-router.post("/api/register", clientController.registerService);
+//router.post("/api/register", clientController.registerService);
 //route for login
-router.post("/api/login", clientController.loginService);
+//router.post("/api/login", clientController.loginService);
 //export router
 module.exports = router;

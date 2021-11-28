@@ -16,7 +16,7 @@ const searchIDService = function (reference, callback) {
     if (err) {
       throw err;
     }
-    if (rows.length == 0) {
+    if (rows.length === 0) {
       console.log("Unkown product!");
       let product = null;
       callback(null, product);
